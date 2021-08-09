@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Red+Hat+Display"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Red Hat Display", sans-serif;
+      }
+
+      .card {
+        overflow: auto;
+        width: 400px;
+        height: 600px;
+        margin: auto;
+        border-radius: 15px;
+        background-color: hsl(225, 100%, 98%);
+        text-align: center;
+      }
+      .first {
+        width: 100%;
+      }
+
+      .con {
+        margin: auto;
+        display: flex;
+        width: 250px;
+        height: 70px;
+        background-color: hsl(225, 100%, 94%);
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 15px;
+      }
+
+      p {
+        color: hsl(224, 23%, 55%);
+        font-size: 0.9em;
+      }
+
+      .card > p {
+        padding: 5px 40px;
+        font-size: 1em;
+      }
+
+      .con a {
+        text-decoration: none;
+        color: hsl(245, 75%, 52%);
+        font-family: "Red Hat Display", sans-serif;
+      }
+
+      .con div {
+        line-height: 0.1em;
+        margin-left: -15px;
+      }
+
+      .music {
+        filter: invert(10%);
+        border-radius: 50%;
+      }
+
+      button {
+        margin-top: 40px;
+        border: none;
+        background-color: transparent;
+        color: hsl(223, 47%, 23%);
+        font-weight: 900;
+      }
+
+      button:first-of-type {
+        color: hsl(225, 100%, 98%);
+        background-color: hsl(245, 75%, 52%);
+        padding: 10px 40px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div>
+        <img src="./images/illustration-hero.svg" alt="" class="first" />
+      </div>
+      <h2>Order Summary</h2>
+      <p>
+        You can now listen to millions of song, audiobooks and podcast on any
+        device anywhere you like!
+      </p>
+
+      <div class="con">
+        <img src="./images/icon-music.svg" alt="" class="music" />
+        <div>
+          <h5>Annual Plan</h5>
+          <p>$59.99/year</p>
+        </div>
+        <a href="">change</a>
+      </div>
+
+      <button>Proceed to Payment</button><br />
+      <button>Cancel Order</button>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">jerry</a>.
+    </div>
+  </body>
+</html>
